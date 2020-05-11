@@ -3,6 +3,7 @@ html, body {
     height: 100%;
     margin: 0 auto;
 }
+
  ul {
     padding: 0px!important;
  }
@@ -50,10 +51,21 @@ main {
 .menu ul li {
     display: inline-block;
     font-size: 20px;
-    color: #8b8b8b;
+    
     margin-left: 15px;
     text-transform: uppercase;
     
+}
+
+.menu ul li a {
+    color: #8b8b8b;
+    text-decoration: none;
+    height: 30px;
+}
+
+.menu ul li a:hover {
+    color: #00bac6;
+    border-bottom: 1px solid #00bac6;
 }
 
 .menu {
@@ -66,14 +78,71 @@ main {
     float: right;
     text-align: center;
 }
+
 .busca input {
     height: 25px;
     width: 180px;
     padding: 5px;
     border: 1px solid #d6d6d6;
+}
+
+
+.slider-principal img{
+    width: 100%;
+    height: 600px;
+}
+
+button.slick-prev, button.slick-next {
+    width: 25px;
+    height: 51px;
+    font-size: 0px;
+    border: none;
+    background-color: transparent;
+    background-repeat: no-repeat;
+    z-index: 9;
+    position: absolute;
+    top: 40%;
+    cursor: pointer;
+}
+    
+
+button.slick-prev {
+    background-image: url('../img/arrow-circle-left-solid.svg') ;
+    left: 20px;
+}
+
+button.slick-next {
+    background-image: url('../img/arrow-circle-right-solid.svg');
+    right: 20px;
+}
+
+.slick-initialized {
+    overflow: hidden;
+}
+
+ul.slick-dots {
+    margin-left: 50%;
+    position: absolute;
+    bottom: 10px;
+}
+
+.slick-dots li {
+    display: inline-block;
+    margin-right: 10px;
     
 }
 
-.busca imput i {
-    color: #d6d6d6;
+.slick-dots li button {
+    cursor: pointer;
+    background: transparent;
+    font-size: 0px;
+    border: 3px solid #ffffff;
+    border-radius: 50%;
+    width: 20px;
+    height: 20px;
 }
+
+.slick-dots li.slick-active button {
+    background-color: black;
+}
+
