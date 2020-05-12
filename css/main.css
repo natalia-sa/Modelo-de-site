@@ -11,10 +11,9 @@ html, body {
 .menu-principal {
     background-color: #252323;
     height: 60px;
-    
 }
 
-main {
+main, .content, .primeiro-grid{
     margin: 0 auto;
     width: 980px;
     position: relative;
@@ -22,7 +21,7 @@ main {
 
 .logo {
     font-size: 30px;
-    color: bisque;
+    color: white;
     font-weight: bold;
     padding: 13px;
     width: 80%;
@@ -36,7 +35,7 @@ main {
 .redes-sociais ul i {
     display: inline-block;
     font-size: 25px;
-    color: bisque;
+    color: white;
     margin-left: 15px;
 }
 
@@ -51,10 +50,8 @@ main {
 .menu ul li {
     display: inline-block;
     font-size: 20px;
-    
     margin-left: 15px;
     text-transform: uppercase;
-    
 }
 
 .menu ul li a {
@@ -104,7 +101,6 @@ button.slick-prev, button.slick-next {
     top: 40%;
     cursor: pointer;
 }
-    
 
 button.slick-prev {
     background-image: url('../img/arrow-circle-left-solid.svg') ;
@@ -145,4 +141,38 @@ ul.slick-dots {
 .slick-dots li.slick-active button {
     background-color: black;
 }
+
+.content {
+    color: #9a9a9a;
+    text-align: center;
+}
+
+.content h1 {
+    font-size: 35px;
+    font-weight: normal;
+    text-transform: uppercase;
+}
+
+.content p {
+    font-size: 20px;
+}
+
+.primeiro-grid  {
+    text-align: center;
+    padding: 50px;
+    color: #9a9a9a;
+    display: grid;
+    grid-template-columns: 170px 170px 170px;
+    justify-content: center;
+    grid-column-gap: 200px;
+}
+
+.primeiro-grid i {
+    font-size: 150px;
+}
+
+
+
+
+
 
