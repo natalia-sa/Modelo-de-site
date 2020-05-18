@@ -211,10 +211,11 @@ footer {
 }
 
 @media screen and (max-width:758px) {
-
-    main, .content, .primeiro-grid, .ajustar-tamanho, .descricoes{
-        width: 100%;
+    
+    main, .content, .primeiro-grid, .ajustar-tamanho, .descricoes, .menu-principal{
+        width: 100vh;
     }
+    
     .logo {
         width: 50%;
     }
@@ -234,16 +235,19 @@ footer {
         flex-direction: column;
         justify-content: center;
     }
+    .primeiro-grid {
+        padding: 0;
+    }
 
     .content{
-        padding: 50px;
+        padding: 0;
     }
     
     .footer-2 div {
-        width: 50%;
+        width: 50vw;
     }
 
     .footer-2 div.redes-sociais{
-        width: 50%;
+        width: 50vw;
     } 
 }
